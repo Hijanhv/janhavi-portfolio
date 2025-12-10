@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-mono: 'Courier New', monospace;
+  }
+
+  * {
+    @apply border-dark-border;
+  }
+
+  body {
+    @apply bg-dark-bg text-white antialiased;
+  }
+}
+
+@layer components {
+  .neon-border-purple {
+    @apply border-2 border-neon-purple shadow-neon-purple;
+  }
+  
+  .neon-border-cyan {
+    @apply border-2 border-neon-cyan shadow-neon-cyan;
+  }
+  
+  .neon-border-green {
+    @apply border-2 border-neon-green shadow-neon-green;
+  }
+  
+  .neon-border-pink {
+    @apply border-2 border-neon-pink shadow-neon-pink;
+  }
+
+  .neon-text-purple {
+    @apply text-neon-purple;
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.8);
+  }
+  
+  .neon-text-cyan {
+    @apply text-neon-cyan;
+    text-shadow: 0 0 10px rgba(0, 245, 255, 0.8);
+  }
+  
+  .neon-text-green {
+    @apply text-neon-green;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+  }
+  
+  .neon-text-pink {
+    @apply text-neon-pink;
+    text-shadow: 0 0 10px rgba(255, 16, 240, 0.8);
+  }
+
+  .brutalist-card {
+    @apply bg-dark-card border-4 border-white p-6 transform transition-all duration-200;
+  }
+
+  .brutalist-card:hover {
+    @apply translate-x-1 translate-y-1;
+  }
+
+  .brutalist-button {
+    @apply px-6 py-3 border-4 border-current font-bold uppercase tracking-wider transform transition-all duration-200;
+  }
+
+  .brutalist-button:hover {
+    @apply translate-x-1 translate-y-1;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px currentColor;
+  }
+}
