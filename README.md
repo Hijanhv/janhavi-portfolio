@@ -42,7 +42,7 @@ janhv/
 │   ├── skills.ts           # Skills and tech stack data
 │   └── info.ts             # Personal info and social links
 ├── public/
-│   └── Janhavi-Chavada-Resume.pdf  # Your resume PDF (add this!)
+│   └── Janhavi-Chavada-Resume.pdf  # my resume PDF (add this!)
 ├── tailwind.config.ts      # Tailwind with neon theme
 ├── tsconfig.json           # TypeScript configuration
 ├── package.json            # Dependencies
